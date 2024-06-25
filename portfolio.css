@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --color-blue: #A1CCD1;
+    --color-light: #F4F2DE;
+    --color-orange: #E9B384;
+    --color-white: #FFFF;
+    --color-green: #7C9D96;
+    --color-dark: #000;
+    --font-bold: 500;
+    --font-normal: 400;
+    --font-light: 300;
+}
+
+/* ------------------------------------------- */
+/* nav bar code*/
+.nav {
+    width: 100vw;
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    font-weight: var(--font-bold);
+}
+
+.left {
+    display: flex;
+}
+
+.logo {
+    margin: auto 10px;
+}
+
+.contact {
+    padding: 10px;
+}
+
+/* ------------------------------------------- */
+/* home screen code */
+.homeScreen {
+    width: 100vw;
+    height: 90vh;
+    background-color: #F4F2DE;
+}
+
+.homeContent {
+    border: 2px solid red;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeLeft {
+    border: 2px solid blue;
+    margin: 40px;
+}
+
+.homeRight {
+    width: 400px;
+    height: 400px;
+    border: 2px solid purple;
+    margin: 40px;
+}
+
+/* ------------------------------------------- */
+/* carousel code */
+.card {
+    width: 70vw;
+    border-radius: 2em;
+    padding: 2.5rem;
+    color: #ffff;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.card button {
+    color: #ffff;
+    font-size: 1.5rem;
+    border-radius: .7rem;
+    padding: .5rem;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    margin: 0rem 5rem;
+
+}
+
+.cardLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+
+}
+
+#slide1,
+#slide3 {
+    background-color: #7C9D96;
+}
+
+#slide1 h2,
+#slide3 h2 {
+    font-size: 2rem;
+    color: #e9b384;
+}
+
+#slide1 button,
+#slide3 button {
+    background-color: #e9b384;
+    border: #e9b384;
+}
+
+#slide2,
+#slide4 {
+    background-color: #A1CCD1;
+}
+
+#slide2 h2,
+#slide4 h2 {
+    font-size: 2rem;
+    color: #7c9d96;
+}
+
+#slide2 button,
+#slide4 button {
+    background-color: #7C9D96;
+    border: #7C9D96;
+}
+
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    height: 50%;
+    /* object-fit: cover; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #7C9D96;
+}
+
+.carousel__track-container {
+    background: #ffff;
+    height: 100%;
+    display: flex;
+    top: -50%;
+    /* position: relative; */
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in; */
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button--left {
+    left: -60px;
+}
+
+.carousel__button--right {
+    right: -60px;
+}
+
+.carousel__button img {
+    width: 20px;
+}
+
+.carousel__nav {
+    /* background: #7c9d96; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 0 12px;
+}
+
+.carousel__indicator.current-slide {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+/* ------------------------------------------- */
+/* AboutMe section */
+.aboutMe {
+    display: flex;
+    width: 100vw;
+    /* flex-direction: row; */
+    background-color: #F4F2DE;
+}
+
+.boxes {
+    display: flex;
+    width: 100vw;
+    border: 2px solid red;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    padding: 1rem;
+}
+
+.box {
+    padding: 2rem;
+}
+
+.square h3 {
+    color: #7C9D96;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#hiddenTitle {
+    color: transparent;
+}
+
+.boxContent {
+    height: 30vh;
+    text-align: center;
+    background-color: #e9b384;
+    padding: 2.5rem;
+    border-radius: 0.8rem;
+    color: #ffff;
+}
+
+.boxContent p {
+    font-size: 1.5rem;
+}
+
+.aboutMeImg {
+    width: 16rem;
+}
+
+/* ------------------------------------------- */
+/* Contact Page */
+.contactPage {
+    height: 40vh;
+    padding: 10rem;
+}
+
+.contactContent {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 20rem;
+    border: 2px solid red;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+}
